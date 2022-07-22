@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Fetch API</title>
+</head>
+<body>
+    <h1><u>
+        The Fetch API belongs to the Window object 
+    </u></h1>
+    <ul>
+        <li> It returns a promise which on being resolved returns the data</li>
+        <li> The await keyword can only be used within an async function</li>
+    </ul>
+    <script>
+        async function GetDATA(){
+            console.log("Before fetching Data");
+            var data = await fetch("https://api.github.com/users");
+            console.log("After fetching Data");
+            var results= await data.json();
+            console.log("After parsing Data");
+            return results;
+        }
+        
+        GetDATA().then(users=>{
+            console.log("Total number of users= "+users.length);
+            for(var i=0;i<users.length;i++) console.log(users[i].avatar_url+"\n"+users[i].html_url+"\n");    
+        }).catch(error=>{ console.error("There was an ERROR")});
+
+    </script>
+</body>
+</html>
