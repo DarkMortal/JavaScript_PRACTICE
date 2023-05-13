@@ -1,15 +1,16 @@
 "use strict";
 exports.__esModule = true;
+var print = console.info;
 function getData(name, value) {
     return [name, value];
 }
-// With returned tuples/enumerators
 var vegeta = ["Vegeta", 9000];
 var _a = getData("Son Goku", 9000), name = _a[0], value = _a[1];
-console.log(vegeta);
-console.log(name, value);
+print("".concat(vegeta[0], "'s power-level is ").concat(vegeta[1]));
+print("".concat(name, "'s power-level is ").concat(value));
 function area(a) {
     return a * a;
 }
-console.log(area(5));
-console.log(area.call(this, 5));
+print(area(5));
+print(area.call(this, 5));
+//# sourceMappingURL=index.js.map

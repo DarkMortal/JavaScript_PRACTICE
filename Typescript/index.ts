@@ -1,18 +1,22 @@
 /* Modules have their own scope and scripts have the global scope*/
-export {} //This piece of code will make the typscript compiler compile it as a module*/
+export { } //This piece of code will make the typscript compiler compile it as a module*/
 
-function getData(name:string,value:number) {
-    return [name,value];
+const print = console.info;
+
+function getData(name: string, value: number) {
+    return [name, value];
 }
 
 // With returned tuples/enumerators
-const vegeta : [string,number] = ["Vegeta",9000];
-const [name,value] = getData("Son Goku",9000);
-console.log(vegeta);
-console.log(name,value);
+const vegeta: [string, number] = ["Vegeta", 9000];
+const [name, value] = getData("Son Goku", 9000);
 
-function area(a:number){
-    return a*a;
+print(`${vegeta[0]}'s power-level is ${vegeta[1]}`);
+print(`${name}'s power-level is ${value}`);
+
+function area(a: number) {
+    return a * a;
 }
-console.log(area(5));
-console.log(area.call(this,5));
+
+print(area(5));
+print(area.call(this, 5));
