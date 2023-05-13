@@ -3,22 +3,22 @@ const userInput = require('readline').createInterface({
     output: process.stdout
 });
 
-async function Fun2(value,ch){
+async function Fun2(value, ch) {
     console.log("The control is inside Fun2 function");
-    var log=(x)=>{
-        var n=Math.log(10);
-        return Math.log(x)/n;
+    var log = (x) => {
+        var n = Math.log(10);
+        return Math.log(x) / n;
     };
-    var degree=(x)=>{
-        return (x*180)/Math.PI;
+    var degree = (x) => {
+        return (x * 180) / Math.PI;
     };
     //Whenever there is await, the code within the function doesn't proceed further until and unless the promise returns
-    var result= await new Promise((resolveFunction,rejectFunction)=>{   
-        setTimeout(function(){
-            if(ch=="log") resolveFunction(log(value));
-            else if(ch=="degree") resolveFunction(degree(value));
+    var result = await new Promise((resolveFunction, rejectFunction) => {
+        setTimeout(function () {
+            if (ch == "log") resolveFunction(log(value));
+            else if (ch == "degree") resolveFunction(degree(value));
             else rejectFunction("Please Select a valid option");
-        },2000);
+        }, 2000);
     });
     //If the promise isn't resolved, the function throws an error (which is the argument in the rejectFunction)
     //If the promise is resolved, then the argument within the resolveFunction is passed to 'result' variable
@@ -26,13 +26,13 @@ async function Fun2(value,ch){
 }
 
 //If you want to input multiple inputs, then use nested readline methods
-userInput.question("Enter the Number:- ",number=>{
-    userInput.question("Enter the command:-",command=>{
+userInput.question("Enter the Number:- ", number => {
+    userInput.question("Enter the command:-", command => {
         console.log("Before function Fun2");
-        
-        Fun2(number,command).then(result=>{
-            console.log("The answer ="+result);
-        }).catch(error=>{
+
+        Fun2(number, command).then(result => {
+            console.log("The answer =" + result);
+        }).catch(error => {
             console.error(error);
         });
 

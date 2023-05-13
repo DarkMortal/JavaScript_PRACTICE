@@ -7,3 +7,5 @@ module.exports.LambertW=function LambertW(x,base,iterations=100){
     if(iterations==1) return Math.log(x);
     return Math.log(x)/Math.log(base)-Math.log(LambertW(x,base,iterations-1))/Math.log(base);
 }
+
+module.exports.print = console.info;
