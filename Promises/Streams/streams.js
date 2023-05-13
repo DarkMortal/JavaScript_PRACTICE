@@ -14,6 +14,6 @@ data.on("data", arg => {         //He does exactly what I do
 data.pipe(write2);  //But better
 
 var arr = ["Vegeta", "Broly", "Goku", "Gohan", "Rycon", "Jayden"];
-arr.forEach(name => { console.log("Warrior :", name); });   //A callback function is passed as an argument to the ForEach method
+arr.forEach(name => console.info("Warrior :", name));   //A callback function is passed as an argument to the ForEach method
 
 //'this' keyword in Javascript refers to the object that's executing the current function
