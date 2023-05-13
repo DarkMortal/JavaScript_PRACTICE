@@ -1,0 +1,133 @@
+Output of CommonJS/main.js :
+10
+0.851361465764309 5
+
+Output of ES6Module/main.mjs :
+10
+0.851361465764309 5
+
+Output of Promises/Streams/streams.js :
+Warrior : Vegeta
+Warrior : Broly
+Warrior : Goku
+Warrior : Gohan
+Warrior : Rycon
+Warrior : Jayden
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, dolorem cupiditate voluptates hic delectus repudiandae provident, placeat tempore velit aperiam distinctio quae sint iure natus quam amet possimus iusto dolorum laboriosam illo fugiat voluptate! Hic, mollitia aliquam similique in velit ea quia saepe, facilis ex adipisci et culpa magni cum debitis. Maiores cumque ducimus culpa sint fugiat quam voluptatum eius.
+
+
+Output of Promises/async_await.js :
+Enter the Number:- 3
+Enter the command:- log
+Before function Fun2
+The control is inside Fun2 function
+After the function
+The answer = 0.4771212547196623
+
+Output of Promises/classes.js :
+Hello Vegito Blue
+undefined
+234
+Jayden Uchiha
+Madara Uchiha
+This is Global scope
+Jayden Uchiha
+1
+4
+9
+16
+This is not Global Scope
+5
+Shenron
+My Favourite number is 45
+This is global scope
+
+Output of Promises/promises.js :
+Enter the number:- Output of CommonJS/main.js :
+10
+0.851361465764309 5
+
+Output of ES6Module/main.mjs :
+10
+0.851361465764309 5
+
+Output of Promises/Streams/streams.js :
+Warrior : Vegeta
+Warrior : Broly
+Warrior : Goku
+Warrior : Gohan
+Warrior : Rycon
+Warrior : Jayden
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, dolorem cupiditate voluptates hic delectus repudiandae provident, placeat tempore velit aperiam distinctio quae sint iure natus quam amet possimus iusto dolorum laboriosam illo fugiat voluptate! Hic, mollitia aliquam similique in velit ea quia saepe, facilis ex adipisci et culpa magni cum debitis. Maiores cumque ducimus culpa sint fugiat quam voluptatum eius.
+
+
+Output of Promises/async_await.js :
+Enter the Number:- 3
+Enter the command:- log
+Before function Fun2
+The control is inside Fun2 function
+After the function
+The answer = 0.4771212547196623
+
+Output of Promises/classes.js :
+Hello Vegito Blue
+undefined
+234
+Jayden Uchiha
+Madara Uchiha
+This is Global scope
+Jayden Uchiha
+1
+4
+9
+16
+This is not Global Scope
+5
+Shenron
+My Favourite number is 45
+This is global scope
+
+Output of Promises/promises.js :
+Enter the number:- 5
+The answer will be printed in 3 seconds
+Statement after Function Fun1
+Answer:- 0.6989700043360187
+
+Output of Typescript/index.js :
+Vegeta's power-level is 9000
+Son Goku's power-level is 9000
+25
+25
+
+Output of classes.js :
+Food { name: 'Chicken', price: 10, category: 'Meat' }
+Milk { name: 'Milk', price: 15, category: 'Dairy', company: 'Amul' }
+This is the Milk of Amul Company
+
+Output of generators.js :
+1
+3
+5
+7
+9
+11
+
+Output of iterators.js :
+Goku
+Vegeta
+Broly
+Gohan
+Piccolo
+Bardock
+
+Goku
+Vegeta
+Broly
+Gohan
+Piccolo
+Bardock
+
+Output of scopes.js :
+5
+13
+13

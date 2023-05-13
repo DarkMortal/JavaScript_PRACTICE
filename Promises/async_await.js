@@ -30,18 +30,16 @@ userInput.question("Enter the Number:- ", number => {
     userInput.question("Enter the command:-", command => {
         console.log("Before function Fun2");
 
-        Fun2(number, command).then(result => {
-            console.log("The answer =" + result);
-        }).catch(error => {
-            console.error(error);
-        });
+        Fun2(number, command).then(result =>
+            console.log(`The answer = ${result}`)
+        ).catch(error => 
+            console.error(error)
+        );
 
         console.log("After the function");
-
         userInput.close();  //Always remember to close the inputstream
     })
 });
-
 
 /* Points to remember:-
 1. await keyword can only be used within an async function
